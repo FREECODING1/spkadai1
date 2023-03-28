@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="374" height="100" viewBox="0 0 374 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_63" data-name="長方形 63" width="374" height="100" rx="10" transform="translate(697 7590)" fill="#ff9c45" stroke="#e7e9e9" stroke-width="3"/>
+    </clipPath>
+  </defs>
+  <g id="btn" transform="translate(-20 -7590)">
+    <g id="長方形_63-2" data-name="長方形 63" transform="translate(20 7590)" fill="#ff9c45" stroke="#e7e9e9" stroke-width="3">
+      <rect width="374" height="100" rx="10" stroke="none"/>
+      <rect x="1.5" y="1.5" width="371" height="97" rx="8.5" fill="none"/>
+    </g>
+    <g id="マスクグループ_10" data-name="マスクグループ 10" transform="translate(-677)" opacity="0.2" clip-path="url(#clip-path)">
+      <ellipse id="楕円形_26" data-name="楕円形 26" cx="369" cy="77" rx="369" ry="77" transform="translate(515 7488)" fill="#feead8"/>
+    </g>
+    <text id="無料面談_体験授業_お申し込みはコチラ" data-name="無料面談・体験授業
+お申し込みはコチラ" transform="translate(207 7631.001)" fill="#fff" font-size="22" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em"><tspan x="-103" y="0">無料面談・体験授業</tspan><tspan x="-103" y="32">お申し込みはコチラ</tspan></text>
+  </g>
+</svg>

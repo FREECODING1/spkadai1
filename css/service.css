@@ -1,0 +1,119 @@
+.p-service {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 3s, visibility 1s, -webkit-transform 3s;
+  transition: opacity 3s, visibility 1s, -webkit-transform 3s;
+  transition: transform 3s, opacity 3s, visibility 1s;
+  transition: transform 3s, opacity 3s, visibility 1s, -webkit-transform 3s;
+  position: relative;
+}
+.p-service__block {
+  padding: 60px auto;
+}
+.p-service__container {
+  position: relative;
+  background: #FEEAD8;
+}
+.p-service__container::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid 1px #FEEAD8;
+  border-width: 58px 45vw 0 50vw;
+  border-color: #FEEAD8 transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-bottom: 30px;
+}
+.p-service__lead {
+  font-size: 25px;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .p-service__lead {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+.p-service__photo {
+  margin: 30px auto;
+  width: 50%;
+}
+.p-service__list {
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .p-service__list {
+    display: block;
+    margin: 40px auto;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+}
+.p-service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33.3333333333%;
+}
+@media screen and (max-width: 768px) {
+  .p-service__item {
+    width: 100%;
+  }
+}
+.p-service__text {
+  font-size: 25px;
+  font-size: 2.5rem;
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .p-service__text {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+.p-service__icon {
+  width: 6%;
+}
+.p-service__point {
+  width: 40%;
+  margin: 80px auto 0;
+}
+@media screen and (max-width: 768px) {
+  .p-service__point {
+    width: 45%;
+  }
+}
+.p-service__more {
+  font-size: 22px;
+  font-size: 2.2rem;
+  margin: 15px auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.is-fadein {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=service.css.map */

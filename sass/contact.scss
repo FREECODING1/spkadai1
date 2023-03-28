@@ -1,0 +1,99 @@
+.p-contact {
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("../../実務img/voice画像/グループ 133.svg");
+    width: 100vw;
+    height: 80px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    //top: 0;
+  }
+
+  &__container {
+    position: relative;
+    opacity: 0;
+    transform: translate(0, 100px); /* フェードインで動く高さを指定 */
+    transition: all 2000ms;
+  }
+  
+  .effect-scroll {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  &__photo {
+    width: 40%;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    top: -20px;
+  }
+
+  &__title {
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #FF9C45;
+    letter-spacing: 1.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px){
+      font-size: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  &__title::before {
+    content: "";
+    width: 10px;
+    height: 50%;
+    border-radius: 3px;
+    background-size:  30px 1px;
+    border: 1px dotted #000;
+    transform: rotate(60deg);
+    
+    @media screen and (max-width: 768px){
+      transform: rotate(76deg) translate(-2px, 5px);
+    }
+  } 
+
+  &__title::after {
+    content: "";
+    width: 10px;
+    height: 50%;
+    border-radius: 3px;
+    background-size:  30px 1px;
+    border: 1px dotted #000;
+    transform: rotate(-60deg);
+    
+    @media screen and (max-width: 768px){
+      transform: rotate(-76deg) translate(2px, 5px);
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-size: 1.8rem;
+
+    @media screen and (max-width: 768px){
+      font-size: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  &__button {
+    width: 85%;
+    margin: 25px auto 60px;
+  }
+}
+

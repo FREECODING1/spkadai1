@@ -1,0 +1,159 @@
+.p-flow {
+  padding-top: 70px;
+  background: #FF9C45;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 3s, opacity 3s, visibility 1s;
+
+  &__container {
+    margin-top: -751px;
+  }
+
+  &__emphasis {
+    width: 100%;
+    color: #FF9C45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    font-size: 32px;
+    font-size: 3.2rem;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+    margin: 10px 0;
+    position: relative;
+
+    @media screen and (max-width: 768px){
+      font-size: 22px;
+      font-size: 2.2rem;
+    }
+  }
+
+  &__emphasis::before {
+    content: "";
+    width: 80%;
+    height: 40%;
+    background: url("../../実務img/SP/グループ 105 (1).svg");
+    background-repeat: no-repeat;
+    margin-left: -12%;
+    position: absolute;
+    transform: translate(20%,30%);
+
+    @media screen and (max-width: 768px){
+      top: 5px;
+      left: 18%;
+      background-size: contain;
+      width: 15%;   
+    }
+  }
+
+  &__emphasis::after {
+    content: "";
+    width: 80%;
+    height: 40%;
+    margin-left: 5%;
+    background: url("../../実務img/SP/グループ 105 (1).svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(75%, 30%);
+
+    @media screen and (max-width: 768px){
+      top: 5px;
+      right: 22%;
+      background-size: contain;
+      width: 15%;  
+    }
+  }
+
+  &__word {
+    font-size: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__list {
+    margin-top: 30px;
+    padding: 8px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  &__item::after {
+    content: "";
+    position: absolute;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    margin: 40px auto;
+    transform: translateY(70px);
+    left: 45%;
+  }
+
+  &__item:last-child:after {
+    display: none;
+  }
+
+  &__lead {
+    margin-left: 20px;
+    color: #fff;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner {
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 2px;
+    width: 100px;
+  }
+
+  &__number {
+    font-size: 27px;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+
+    @media screen and (max-width: 768px){
+      font-size: 24px;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-size: 2rem;
+
+    @media screen and (max-width: 768px){
+      font-size: 16px;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 768px){
+      font-size: 13px;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.is-fadein {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}

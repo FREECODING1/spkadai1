@@ -1,0 +1,54 @@
+.l-header {
+  max-width: 100%;
+  width: 100%;
+}
+.l-header__logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.l-header__line img {
+  width: auto;
+  height: 30px;
+}
+.l-header__slide {
+  width: 30%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-service {
+  background: #000;
+}
+.p-service__container {
+  background: #FEEAD8;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Noto Sans Japanese";
+}
+
+.p-hero {
+  padding: 60px 70px;
+  margin: 0 auto;
+}
+.p-hero__topics {
+  display: flex;
+}
+.p-hero__text {
+  font-size: 13px;
+}

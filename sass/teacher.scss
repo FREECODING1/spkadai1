@@ -1,0 +1,101 @@
+.p-teacher {
+  background: #FF9C45;
+  z-index: 1;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 3s, opacity 3s, visibility 1s;
+
+  &__parts {
+    position: relative;
+    padding-top: 50px;
+  }
+
+  &__emphasis {
+    width: 100%;
+    color: #FF9C45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    font-size: 32px;
+    font-size: 3.2rem;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+    margin: 10px auto;
+    position: relative;
+
+    @media screen and (max-width: 768px){
+      width: 75%;
+      font-size: 22px;
+      font-size: 2.2rem;
+    }
+  }
+
+  &__emphasis::before {
+    content: "";
+    width: 80%;
+    height: 40%;
+    background: url("../../実務img/SP/グループ 105 (1).svg");
+    background-repeat: no-repeat;
+    margin-left: 12%;
+    position: absolute;
+    @media screen and (max-width: 768px){
+      top: 9px;
+      left: -15%;
+      background-size: contain;
+      width: 15%;   
+    }
+  }
+
+  &__emphasis::after {
+    content: "";
+    width: 80%;
+    top: 10px;
+    height: 15px;
+    margin-left: 7%;
+    background: url("../../実務img/SP/グループ 105 (1).svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(75%, 30%);
+
+    @media screen and (max-width: 768px){
+      top: 5px;
+      right: 10%;
+      background-size: contain;
+      width: 15%;  
+    }
+  }
+
+  &__word {
+    font-size: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__text {
+    text-align: center;
+    width: 90%;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 20px auto;
+  }
+
+  &__list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5% 5%;
+    padding: 20px 10% 5% 8%;
+  }
+}
+
+.is-fadein {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,11 @@
+.l-main {
+  &__container {
+    background: #FF9C45;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+}

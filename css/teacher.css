@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.p-teacher {
+  background: #FF9C45;
+  z-index: 1;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 3s, visibility 1s, -webkit-transform 3s;
+  transition: opacity 3s, visibility 1s, -webkit-transform 3s;
+  transition: transform 3s, opacity 3s, visibility 1s;
+  transition: transform 3s, opacity 3s, visibility 1s, -webkit-transform 3s;
+}
+.p-teacher__parts {
+  position: relative;
+  padding-top: 50px;
+}
+.p-teacher__emphasis {
+  width: 100%;
+  color: #FF9C45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 5px;
+  font-size: 32px;
+  font-size: 3.2rem;
+  text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, 0px 1px 0 #FFF, -1px 0 #FFF, -1px 0 0 #FFF, 1px 0 0 #FFF;
+  margin: 10px auto;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .p-teacher__emphasis {
+    width: 75%;
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+}
+.p-teacher__emphasis::before {
+  content: "";
+  width: 80%;
+  height: 40%;
+  background: url("../../実務img/SP/グループ 105 (1).svg");
+  background-repeat: no-repeat;
+  margin-left: 12%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .p-teacher__emphasis::before {
+    top: 9px;
+    left: -15%;
+    background-size: contain;
+    width: 15%;
+  }
+}
+.p-teacher__emphasis::after {
+  content: "";
+  width: 80%;
+  top: 10px;
+  height: 15px;
+  margin-left: 7%;
+  background: url("../../実務img/SP/グループ 105 (1).svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  -webkit-transform: translate(75%, 30%);
+          transform: translate(75%, 30%);
+}
+@media screen and (max-width: 768px) {
+  .p-teacher__emphasis::after {
+    top: 5px;
+    right: 10%;
+    background-size: contain;
+    width: 15%;
+  }
+}
+.p-teacher__word {
+  font-size: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+.p-teacher__text {
+  text-align: center;
+  width: 90%;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 20px auto;
+}
+.p-teacher__list {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 5% 5%;
+  padding: 20px 10% 5% 8%;
+}
+
+.is-fadein {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=teacher.css.map */

@@ -1,0 +1,113 @@
+.p-service {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 3s, opacity 3s, visibility 1s;
+  position: relative;
+
+  
+  &__block {
+    padding: 60px auto;
+  }
+
+  &__container {
+    position: relative;
+    background: #FEEAD8;
+  }
+
+  &__container::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid 1px #FEEAD8;
+    border-width: 58px 45vw 0 50vw;
+    border-color: #FEEAD8 transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-bottom: 30px;
+  }
+
+  &__lead {
+    font-size: 25px;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 60px;
+
+    @media screen and (max-width: 768px){
+      font-size: 18px;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__photo {
+    margin: 30px auto;
+    width: 50%;
+  }
+
+  &__list {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media screen and (max-width: 768px){
+      display: block;
+      margin: 40px auto;
+      padding-left: 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: calc(100%/3);
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 25px;
+    font-size: 2.5rem;
+    margin-left: 10px;
+
+    @media screen and (max-width: 768px){
+      font-size: 18px;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__icon {
+    width: 6%;
+  }
+
+  &__point {
+    width: 40%;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: 768px){
+      width: 45%;
+    }
+  }
+
+  &__more {
+    font-size: 22px;
+    font-size: 2.2rem;
+    margin: 15px auto;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+.is-fadein {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
